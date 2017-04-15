@@ -8,4 +8,7 @@
 void mcu_init(void);
 void putchar(BYTE c);
 
+void gpio_control(U08 gpio_no, U08 pin_no, U08 onoff);
+
 #endif
+

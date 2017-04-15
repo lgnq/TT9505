@@ -1719,8 +1719,41 @@ It remains the customers' responsibility to verify the actual system performance
 	#define REG64D	0x64D
 	#define REG64E	0x64E
 
-
-
+/* Gpio enable ( active high ) */
+#define GPIO_EN0 REG080
+#define GPIO_EN1 REG081
+#define GPIO_EN2 REG082
+#define GPIO_EN3 REG083
+#define GPIO_EN4 REG084
+#define GPIO_EN5 REG085
+#define GPIO_EN6 REG086
+    
+/* Gpio output enable ( active high ) */
+#define GPIO_OE0 REG088
+#define GPIO_OE1 REG089
+#define GPIO_OE2 REG08A
+#define GPIO_OE3 REG08B
+#define GPIO_OE4 REG08C
+#define GPIO_OE5 REG08D
+#define GPIO_OE6 REG08E
+    
+/* Gpio output data */
+#define GPIO_OD0 REG090
+#define GPIO_OD1 REG091
+#define GPIO_OD2 REG092
+#define GPIO_OD3 REG093
+#define GPIO_OD4 REG094
+#define GPIO_OD5 REG095
+#define GPIO_OD6 REG096
+    
+/* Gpio input data */
+#define GPIO_ID0 REG098
+#define GPIO_ID1 REG099
+#define GPIO_ID2 REG09A
+#define GPIO_ID3 REG09B
+#define GPIO_ID4 REG09C
+#define GPIO_ID5 REG09D
+#define GPIO_ID6 REG09E
 
 //============================================================
 //
@@ -1955,9 +1988,5 @@ r130 = TW8835_R130;
 #define PORT_EXTMCU_ISP			P3_2
 #define PORT_DEBUG				P3_1
 
-
 #endif	//.._TW8836_H_
-
-
-
 

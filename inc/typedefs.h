@@ -1,17 +1,7 @@
-/*
-Disclaimer: THIS INFORMATION IS PROVIDED 'AS-IS' FOR EVALUATION PURPOSES ONLY.  
-INTERSIL CORPORATION AND ITS SUBSIDIARIES ('INTERSIL') DISCLAIM ALL WARRANTIES, 
-INCLUDING WITHOUT LIMITATION FITNESS FOR A PARTICULAR PURPOSE AND MERCHANTABILITY.  
-Intersil provides evaluation platforms to help our customers to develop products. 
-However, factors beyond Intersil's control could significantly affect Intersil 
-product performance. 
-It remains the customers' responsibility to verify the actual system performance.
-*/
 #ifndef	__TYPEDEFS_H__
 #define	__TYPEDEFS_H__
 
 #include <intrins.h>
-
 
 #define DATA		data
 #define PDATA		pdata
@@ -22,10 +12,21 @@ It remains the customers' responsibility to verify the actual system performance
 #define CODE_P
 #define FAR
 
+// Standard types
+typedef unsigned char uint8_t;
+typedef char          int8_t;
+typedef unsigned int  uint16_t;
+typedef int           int16_t;
+
 //typedef	unsigned char	Register;
 typedef	unsigned char	BYTE;
 typedef	unsigned int	WORD;
 typedef	unsigned long	DWORD;
+
+typedef unsigned char U08;
+typedef char          S08;
+typedef unsigned int  U16;
+typedef int           S16;
 
 #define	TRUE	1
 #define	FALSE	0
@@ -90,9 +91,9 @@ struct LongRegisterInfo
    WORD	Max;
    WORD	Default;
 };
-
  
-typedef struct { 
+typedef struct 
+{ 
     DWORD start; 
     DWORD length; 
     WORD left; 
@@ -101,10 +102,11 @@ typedef struct {
     WORD bottom; 
 } SPIIMAGE; 
 
-typedef struct { 
+typedef struct 
+{ 
     DWORD start; 
     DWORD length; 
 } SLIDEIMAGE; 
 
-
 #endif // __TYPEDEFS_H__
+

@@ -54,22 +54,15 @@
 
 -*--------------------------------------------------------------------*/
 
-#ifndef _MAIN_H
-#define _MAIN_H 1
+#ifndef __MAIN_H__
+#define __MAIN_H__
 
 // Links to target libraries
 ///#include <compiler_defs.h>             // Compiler declarations
-///#include <C8051F850_defs.h>            // SFR declarations
 #include "reg.h"
-#include "typedefs.h"
-#include "tw8836.h"
 #include "mcu.h"
-
-// Standard types
-typedef unsigned char uint8_t;
-typedef char int8_t;
-typedef unsigned int uint16_t;
-typedef int int16_t;
+#include "tw8836.h"
+#include "typedefs.h"
 
 // SYSCLK frequency in Hz
 #define SYSCLK (24500000/8)
