@@ -61,6 +61,7 @@
 ///#include <compiler_defs.h>             // Compiler declarations
 #include "reg.h"
 #include "mcu.h"
+#include "gpio.h"
 #include "tw8836.h"
 #include "typedefs.h"
 

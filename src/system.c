@@ -153,6 +153,16 @@ void SYSTEM_Configure_Required_Mode(void)
 
 		case NORMAL:
             mcu_init();
+
+            avdd_control(OFF);
+            lcd_reset_control(OFF);
+            backlight_control(OFF);
+            
+            tw8836_init();
+
+            avdd_control(ON);
+            lcd_reset_control(ON);
+            backlight_control(ON);
         
 			// Set up WDT 
 			// Set to overflow after ~12ms

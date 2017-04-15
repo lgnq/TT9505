@@ -1,14 +1,5 @@
-/*
-Disclaimer: THIS INFORMATION IS PROVIDED 'AS-IS' FOR EVALUATION PURPOSES ONLY.  
-INTERSIL CORPORATION AND ITS SUBSIDIARIES ('INTERSIL') DISCLAIM ALL WARRANTIES, 
-INCLUDING WITHOUT LIMITATION FITNESS FOR A PARTICULAR PURPOSE AND MERCHANTABILITY.  
-Intersil provides evaluation platforms to help our customers to develop products. 
-However, factors beyond Intersil's control could significantly affect Intersil 
-product performance. 
-It remains the customers' responsibility to verify the actual system performance.
-*/
-#ifndef _TW8836_H_
-#define	_TW8836_H_
+#ifndef __TW8836_H__
+#define	__TW8836_H__
 
 //-----------------------------------------------------------------------------
 //		Chip Register Address Mapping
@@ -1987,6 +1978,9 @@ r130 = TW8835_R130;
 #define PORT_CRYSTAL_OSC		P2_7
 #define PORT_EXTMCU_ISP			P3_2
 #define PORT_DEBUG				P3_1
+
+void register_init(U08 *dat);
+void tw8836_init(void);
 
 #endif	//.._TW8836_H_
 
