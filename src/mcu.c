@@ -246,3 +246,4 @@ void mcu_init(void)
     putchar('O');
     putchar('K');
 }
+

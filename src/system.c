@@ -176,7 +176,7 @@ void SYSTEM_Configure_Required_Mode(void)
 			SCH_Add_Task(WATCHDOG_Update, 0, 1500, 10, 0);
 
 			// Add heartbeat task
-			SCH_Add_Task(HEARTBEAT_Update, 0, 1000, 20, 0);
+			SCH_Add_Task(HEARTBEAT_Update2, 0, 1000, 20, 0);
 
 			// Feed the watchdog
 			WATCHDOG_Update();
