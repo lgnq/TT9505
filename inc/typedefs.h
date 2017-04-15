@@ -27,6 +27,8 @@ typedef unsigned char U08;
 typedef char          S08;
 typedef unsigned int  U16;
 typedef int           S16;
+typedef unsigned long U32;
+typedef long          S32;
 
 #define	TRUE	1
 #define	FALSE	0

@@ -63,6 +63,10 @@
 #include "mcu.h"
 #include "gpio.h"
 #include "tw8836.h"
+#include "spiosd.h"
+#include "fontosd.h"
+#include "spiflash.h"
+
 #include "typedefs.h"
 
 // SYSCLK frequency in Hz

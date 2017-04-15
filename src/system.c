@@ -159,6 +159,7 @@ void SYSTEM_Configure_Required_Mode(void)
             backlight_control(OFF);
             
             tw8836_init();
+            spi_flash_detect();
 
             avdd_control(ON);
             lcd_reset_control(ON);
