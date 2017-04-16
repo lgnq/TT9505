@@ -13,7 +13,7 @@ typedef struct rle2_header_s
     U16 w;
     U16 h;
 
-    U32 size;
+    U32 length;
 
     U08 LUT_format;   /*  Bit0- 0:RGBa, 1:BGRa, bit1- 0:LUTS, 1:LUT;  */
     U08 LUT_colors;   /*  0xff:256 colors,  0x7F:128 colors,...  */
@@ -33,6 +33,8 @@ typedef struct image_header_s
     U16 dx, dy;       /*  width , height ( pixel )  */
     U16 lut_size;     /*  we don't need it. we can assume LUT size & image size.  */
 } image_header_t;
+
+void header_parse(U32 spi_addr);
 
 #endif
 

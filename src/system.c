@@ -160,6 +160,7 @@ void SYSTEM_Configure_Required_Mode(void)
             
             tw8836_init();
             spi_flash_detect();
+            header_parse(0x100000);
 
             avdd_control(ON);
             lcd_reset_control(ON);

@@ -23,6 +23,9 @@
 #define DMA_CMD_COUNT_3  3
 #define DMA_CMD_COUNT_4  4
 #define DMA_CMD_COUNT_5  5
+#define DMA_CMD_COUNT_6  6
+#define DMA_CMD_COUNT_7  7
+#define DMA_CMD_COUNT_8  8
 
 #define SPI_CMD_OPT_NONE          0x00
 #define SPI_CMD_OPT_BUSY          0x04
@@ -103,6 +106,7 @@
 #define SPICMD_REMS2             0xEF    //read ID for 2x I/O mode
 
 void spi_flash_detect(void);
+void spi_flash_dma_read2xmem(U16 dest_loc, U32 src_loc, U16 length);
 
 #endif
 

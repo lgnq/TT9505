@@ -181,7 +181,7 @@ void HEARTBEAT_Update2(void)
 	if (Heartbeat_state == 1)
 	{
 		Heartbeat_state = 0;
-        putchar('0');
+
 //		HEARTBEAT_LED_PIN = 1;
         gpio_control(2, 0, ON);
         //gpio_control(2, 1, ON);
@@ -193,7 +193,7 @@ void HEARTBEAT_Update2(void)
 	{
 		Heartbeat_state = 1;
 //		HEARTBEAT_LED_PIN = 0;
-        putchar('1');
+
         gpio_control(2, 0, OFF);
         //gpio_control(2, 1, OFF);
         //gpio_control(2, 2, OFF);

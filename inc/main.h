@@ -68,6 +68,7 @@
 #include "spiflash.h"
 
 #include "typedefs.h"
+#include "printf.h"
 
 // SYSCLK frequency in Hz
 #define SYSCLK (24500000/8)
