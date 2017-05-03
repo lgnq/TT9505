@@ -38,7 +38,6 @@ void spi_flash_detect(void)
 
 void spi_flash_dma_read2xmem(U16 dest_loc, U32 src_loc, U16 length)
 {
-//    WORD dest_w_loc = (WORD)dest_loc;
     BYTE i;
     BYTE dma_option;
     volatile BYTE vdata;
@@ -84,7 +83,7 @@ void spi_flash_dma_read2xmem(U16 dest_loc, U32 src_loc, U16 length)
 
     if (i == 200)
     {
-        printf("\nSpiFlashDmaWait DMA Busy. LINE:%d",__LINE__);
+        printf("\nSpiFlashDmaWait DMA Busy. LINE:%d", __LINE__);
         return;	                                /*   fail:busy  */
     }
 }

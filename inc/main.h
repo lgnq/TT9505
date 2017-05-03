@@ -62,6 +62,7 @@
 #include "reg.h"
 #include "mcu.h"
 #include "gpio.h"
+#include "touch.h"
 #include "tw8836.h"
 #include "spiosd.h"
 #include "fontosd.h"

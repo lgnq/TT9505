@@ -111,7 +111,7 @@ void SCH_Init(void)
 	// Configure Timer2 to 16-bit auto-reload and generate an interrupt at
 	// interval specified by <counts> using SYSCLK/48 as its time base.
 	TMR2CN = 0x00;                // Stop Timer2; Clear TF2;
-	                             // use SYSCLK/12 as timebase
+	                              // use SYSCLK/12 as timebase
 	CKCON &= ~0x60;               // Timer2 clocked based on T2XCLK;
 
 	// Init reload values
